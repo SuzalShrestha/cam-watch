@@ -45,7 +45,7 @@ def detect(model, classes, frame):
 
 
 def send_photo(img, caption):
-    ok, jpg = cv2.imencode(".jpg", img)
+    _, jpg = cv2.imencode(".jpg", img)
     send_telegram(cfg["telegram"], "sendPhoto", "photo", "p.jpg", jpg.tobytes(), "image/jpeg", caption)
 
 

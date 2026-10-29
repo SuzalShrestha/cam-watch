@@ -1,5 +1,9 @@
 line-length = 160
 
 [lint]
-# the code keeps short stdlib imports on one line and uses small lambdas
-ignore = ["E401", "E731"]
+ignore = [
+  "E401", "I001",  # short stdlib imports stay on one line
+  "E731",          # small lambdas
+  "BLE001",        # optional features (Telegram, faces, TV) catch everything so they never stop recording
+  "PLW1510",       # adb calls are best effort; ffmpeg calls that matter pass check=True
+]

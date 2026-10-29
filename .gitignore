@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+# runtime data: video, faces and logs stay private
+clips/
+faces/
+timelapse/
+models/
+*.log
+*.pt
+*.onnx
+*.mp4
+config.ini

@@ -1,0 +1,5 @@
+line-length = 160
+
+[lint]
+# the code keeps short stdlib imports on one line and uses small lambdas
+ignore = ["E401", "E731"]
